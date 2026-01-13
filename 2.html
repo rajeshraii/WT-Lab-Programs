@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Time table</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #578;
+
+        }
+
+        table {
+            border-radius: collapse;
+            border: 2px solid black;
+            width: 800px;
+            height: 600px;
+        }
+
+        th {
+            color: #f4f4f4;
+            text-align: center;
+        }
+
+        td {
+            text-align: center;
+            color: white;
+        }
+
+        th,
+        td {
+            border-collapse: collapse;
+            border: 1px solid black;
+            background: #999999;
+        }
+
+        .lab {
+            background: green;
+            color: white;
+        }
+
+        .elective {
+            background: blue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Day/Time</th>
+                <th>9-10</th>
+                <th>10-11</th>
+                <th>11-12</th>
+                <th>12-1</th>
+                <th>1-2</th>
+                <th>2-3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>SEPM</td>
+                <td>TOC</td>
+                <td class="lab">WT LAB</td>
+                <td rowspan="6">LUNCH</td>
+                <td>CN</td>
+                <td>APTIUDE</td>
+            </tr>
+
+            <tr>
+                <td>Tuesday</td>
+                <td class="elective">Elective</td>
+                <td>RM</td>
+                <td>CN</td>
+                <td class="lab">WT LAB</td>
+                <td>DeVops</td>
+            </tr>
+
+            <tr>
+                <td>Wednesday</td>
+                <td>MERN</td>
+                <td>TOC</td>
+                <td class="lab">ML LAB</td>
+                <td>CN</td>
+                <td>SEPM</td>
+            </tr>
+
+            <tr>
+                <td>Thursday</td>
+                <td>SEPM</td>
+                <td class="elective">Elective</td>
+                <td>RM</td>
+                <td class="lab">CN LAB</td>
+                <td>MERN</td>
+            </tr>
+
+            <tr>
+                <td>Friday</td>
+                <td>CN</td>
+                <td>ML</td>
+                <td class="lab">CN LAB</td>
+                <td>TOC</td>
+                <td class="elective">Elective</td>
+            </tr>
+
+            <tr>
+                <td>Saturday</td>
+                <td>RM</td>
+                <td>MERN</td>
+                <td class="elective">Elective</td>
+                <td>CN</td>
+                <td>DeVops</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="7">Have a nice Day..!</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
