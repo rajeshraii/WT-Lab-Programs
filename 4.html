@@ -1,134 +1,121 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Registration Page</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: rgb(21, 20, 20);
-            font-size: 25px;
-        }
+  <meta charset="UTF-8">
+  <title>Registration Page</title>
+  <style>
+    body {
+      background: lightgray;
+      font-family: Arial, sans-serif;
+    }
 
-        h2 {
-            color: rgba(232, 5, 5, 0.979);
-            text-align: center;
-        }
+    .form-box {
+      background: white;
+      padding: 20px;
+      width: 400px;
+      margin: 50px auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
 
-        .form-box {
-            background: rgb(144, 135, 178);
-            width: 800;
-            margin: auto;
-            border-radius: 8px;
-            font-size: 20px;
-            border-radius: 1px solid black;
+    h2 {
+      text-align: center;
+      color: blue;
+    }
 
-        }
+    table {
+      width: 100%;
+    }
 
-        table {
-            width: 100%;
-        }
+    td {
+      padding: 6px;
+      font-size: 14px;
+      color: darkgreen;
+    }
 
-        td {
-            padding: 20;
-            font-size: 20px;
-        }
-        input,select {
-            width: 100%;
-        }
+    input, select {
+      width: 100%;
+      padding: 5px;
+      box-sizing: border-box;
+    }
 
-        input[type="radio"] {
-            color: blue;
-            transform: scale(1.5);
-            margin-right: 8px;
-            vertical-align: middle;
-        }
+    input[type="radio"] {
+      width: auto;
+    }
 
-        input[type="submit"] {
-            color: white;
-            background-color: green;
-            width: 200px;
-            height: 40px;
-            padding: 8px 16px;
-        }
+    input[type="submit"] {
+      background: green;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
 
-        input[type="text"] {
-            font-size: 20;
-            color: black;
-            background: orange;
-            width: 400;
-            height: 30px;
-        }
-
-        input[type="email"] {
-            width: 400;
-            height: 30px;
-        }
-
-        input[type="date"] {
-            width: 400;
-            height: 30px;
-            background: skyblue;
-        }
-
-        input[type="password"] {
-            background: orange;
-            width: 400;
-            height: 30px;
-        }
-    </style>
+    input[type="submit"]:hover {
+      background: darkgreen;
+    }
+  </style>
 </head>
 
 <body>
-    <h2>Registration Page</h2>
-    <div class="form-box">
-        <form>
-            <table>
-                <tr>
-                    <td>Name </td>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <td>E-mail </td>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <td>Password </td>
-                    <td><input type="password"></td>
-                </tr>
-                <tr>
-                    <td>DOB </td>
-                    <td><input type="date"></td>
-                </tr>
-                <tr>
-                    <td>Phone </td>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <td>State </td>
-                    <td><select>
-                            <option>Karnataka </option>
-                            <option>Kerala </option>
-                            <option>UttaraPradesh </option>
-                        </select></td>
-                </tr>
-                <tr>
-                    <td>Gender </td>
-                    <td>
-                        <input type="radio" name="gender">Male
-                        <input type="radio" name="gender">Female
-                        <input type="radio" name="gender">Other
-                    </td>
-                </tr>
-                <tr>
-                    <td>Address</td>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <td colspan="2" style="text-align:center;"><input type="submit" value="Register"></td>
-                </tr>
-            </table>
-        </form>
-    </div>
-</body>
+  <div class="form-box">
+    <h2>Registration Form</h2>
+    <form>
+      <table>
+        <tr>
+          <td>Name:</td>
+          <td><input type="text" required></td>
+        </tr>
 
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" required></td>
+        </tr>
+
+        <tr>
+          <td>Password:</td>
+          <td><input type="password" required></td>
+        </tr>
+
+        <tr>
+          <td>DOB:</td>
+          <td><input type="date" required></td>
+        </tr>
+
+        <tr>
+          <td>State:</td>
+          <td>
+            <select required>
+              <option value="">--Select--</option>
+              <option>Maharashtra</option>
+              <option>Karnataka</option>
+              <option>Tamil Nadu</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+          </td>
+        </tr>
+
+        <tr>
+          <td>Phone:</td>
+          <td><input type="text" maxlength="10" required></td>
+        </tr>
+
+        <tr>
+          <td colspan="2" style="text-align: center;">
+            <input type="submit" value="Register">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
 </html>
